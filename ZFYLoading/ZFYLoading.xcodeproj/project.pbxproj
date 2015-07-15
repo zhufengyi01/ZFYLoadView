@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		38CE79721B56697A0024BE2D /* ZFYLoading.m in Sources */ = {isa = PBXBuildFile; fileRef = 38CE79711B56697A0024BE2D /* ZFYLoading.m */; };
+		38CE79741B56720F0024BE2D /* ZFYLoad.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 38CE79731B56720F0024BE2D /* ZFYLoad.bundle */; };
 		38CFC4131B550CD2004EF31F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 38CFC4121B550CD2004EF31F /* main.m */; };
 		38CFC4161B550CD2004EF31F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 38CFC4151B550CD2004EF31F /* AppDelegate.m */; };
 		38CFC4191B550CD2004EF31F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38CFC4181B550CD2004EF31F /* ViewController.m */; };
@@ -14,7 +16,6 @@
 		38CFC41E1B550CD2004EF31F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38CFC41D1B550CD2004EF31F /* Images.xcassets */; };
 		38CFC4211B550CD2004EF31F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38CFC41F1B550CD2004EF31F /* LaunchScreen.xib */; };
 		38CFC42D1B550CD2004EF31F /* ZFYLoadingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 38CFC42C1B550CD2004EF31F /* ZFYLoadingTests.m */; };
-		38CFC4391B550D14004EF31F /* ZFYLoading.m in Sources */ = {isa = PBXBuildFile; fileRef = 38CFC4381B550D14004EF31F /* ZFYLoading.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +29,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		38CE79701B56697A0024BE2D /* ZFYLoading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFYLoading.h; sourceTree = "<group>"; };
+		38CE79711B56697A0024BE2D /* ZFYLoading.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFYLoading.m; sourceTree = "<group>"; };
+		38CE79731B56720F0024BE2D /* ZFYLoad.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ZFYLoad.bundle; sourceTree = "<group>"; };
 		38CFC40D1B550CD2004EF31F /* ZFYLoading.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZFYLoading.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		38CFC4111B550CD2004EF31F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		38CFC4121B550CD2004EF31F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -41,8 +45,6 @@
 		38CFC4261B550CD2004EF31F /* ZFYLoadingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZFYLoadingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		38CFC42B1B550CD2004EF31F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		38CFC42C1B550CD2004EF31F /* ZFYLoadingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFYLoadingTests.m; sourceTree = "<group>"; };
-		38CFC4371B550D14004EF31F /* ZFYLoading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFYLoading.h; sourceTree = "<group>"; };
-		38CFC4381B550D14004EF31F /* ZFYLoading.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFYLoading.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,10 +65,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		38CE796F1B56697A0024BE2D /* ZFYLoad */ = {
+			isa = PBXGroup;
+			children = (
+				38CE79731B56720F0024BE2D /* ZFYLoad.bundle */,
+				38CE79701B56697A0024BE2D /* ZFYLoading.h */,
+				38CE79711B56697A0024BE2D /* ZFYLoading.m */,
+			);
+			path = ZFYLoad;
+			sourceTree = "<group>";
+		};
 		38CFC4041B550CD2004EF31F = {
 			isa = PBXGroup;
 			children = (
-				38CFC4361B550CF9004EF31F /* ZFYLoad */,
 				38CFC40F1B550CD2004EF31F /* ZFYLoading */,
 				38CFC4291B550CD2004EF31F /* ZFYLoadingTests */,
 				38CFC40E1B550CD2004EF31F /* Products */,
@@ -85,6 +96,7 @@
 		38CFC40F1B550CD2004EF31F /* ZFYLoading */ = {
 			isa = PBXGroup;
 			children = (
+				38CE796F1B56697A0024BE2D /* ZFYLoad */,
 				38CFC4141B550CD2004EF31F /* AppDelegate.h */,
 				38CFC4151B550CD2004EF31F /* AppDelegate.m */,
 				38CFC4171B550CD2004EF31F /* ViewController.h */,
@@ -121,15 +133,6 @@
 				38CFC42B1B550CD2004EF31F /* Info.plist */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		38CFC4361B550CF9004EF31F /* ZFYLoad */ = {
-			isa = PBXGroup;
-			children = (
-				38CFC4371B550D14004EF31F /* ZFYLoading.h */,
-				38CFC4381B550D14004EF31F /* ZFYLoading.m */,
-			);
-			path = ZFYLoad;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,6 +218,7 @@
 				38CFC41C1B550CD2004EF31F /* Main.storyboard in Resources */,
 				38CFC4211B550CD2004EF31F /* LaunchScreen.xib in Resources */,
 				38CFC41E1B550CD2004EF31F /* Images.xcassets in Resources */,
+				38CE79741B56720F0024BE2D /* ZFYLoad.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,7 +238,7 @@
 			files = (
 				38CFC4191B550CD2004EF31F /* ViewController.m in Sources */,
 				38CFC4161B550CD2004EF31F /* AppDelegate.m in Sources */,
-				38CFC4391B550D14004EF31F /* ZFYLoading.m in Sources */,
+				38CE79721B56697A0024BE2D /* ZFYLoading.m in Sources */,
 				38CFC4131B550CD2004EF31F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -432,6 +436,7 @@
 				38CFC4321B550CD2004EF31F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		38CFC4331B550CD2004EF31F /* Build configuration list for PBXNativeTarget "ZFYLoadingTests" */ = {
 			isa = XCConfigurationList;
@@ -440,6 +445,7 @@
 				38CFC4351B550CD2004EF31F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

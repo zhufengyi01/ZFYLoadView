@@ -18,11 +18,20 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     self.view.backgroundColor= [UIColor whiteColor];
-    //[ZFYLoading showNullWithstatus:@"没有数据" inView:self.view];
-    //[ZFYLoading showNullWithImage:nil inView:self.view];
-    [ZFYLoading showFailWithstatus:@"加载失败" inView:self.view event:^(UIButton *button) {
-        
+    
+    UIView *view= [[UIView alloc]initWithFrame:CGRectMake(50, 100, 200, 280)];
+    view.backgroundColor = [UIColor redColor];
+    [self.view addSubview:view];
+    
+    [ZFYLoading showFailWithstatus:@"加载失败" inView:view event:^(UIButton *button) {
+        NSLog(@"button ==%@",button);
+        [ZFYLoading dismiss];
     }];
+
+   /// [ZFYLoading showNullWithstatus:@"没有数据" inView:view];
+    //  [ZFYLoading showNullWithImage:nil inView:view];
+//    
+
 }
 
 - (void)didReceiveMemoryWarning {
