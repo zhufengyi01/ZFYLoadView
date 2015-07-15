@@ -16,6 +16,8 @@
 		38CFC41E1B550CD2004EF31F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38CFC41D1B550CD2004EF31F /* Images.xcassets */; };
 		38CFC4211B550CD2004EF31F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38CFC41F1B550CD2004EF31F /* LaunchScreen.xib */; };
 		38CFC42D1B550CD2004EF31F /* ZFYLoadingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 38CFC42C1B550CD2004EF31F /* ZFYLoadingTests.m */; };
+		38D344D11B56A95300024AE8 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38D344D01B56A95300024AE8 /* QuartzCore.framework */; };
+		38D344D31B56B2EC00024AE8 /* huoying.png in Resources */ = {isa = PBXBuildFile; fileRef = 38D344D21B56B2EC00024AE8 /* huoying.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,8 @@
 		38CFC4261B550CD2004EF31F /* ZFYLoadingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZFYLoadingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		38CFC42B1B550CD2004EF31F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		38CFC42C1B550CD2004EF31F /* ZFYLoadingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFYLoadingTests.m; sourceTree = "<group>"; };
+		38D344D01B56A95300024AE8 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		38D344D21B56B2EC00024AE8 /* huoying.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = huoying.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38D344D11B56A95300024AE8 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +83,8 @@
 		38CFC4041B550CD2004EF31F = {
 			isa = PBXGroup;
 			children = (
+				38D344D21B56B2EC00024AE8 /* huoying.png */,
+				38D344D01B56A95300024AE8 /* QuartzCore.framework */,
 				38CFC40F1B550CD2004EF31F /* ZFYLoading */,
 				38CFC4291B550CD2004EF31F /* ZFYLoadingTests */,
 				38CFC40E1B550CD2004EF31F /* Products */,
@@ -216,6 +223,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				38CFC41C1B550CD2004EF31F /* Main.storyboard in Resources */,
+				38D344D31B56B2EC00024AE8 /* huoying.png in Resources */,
 				38CFC4211B550CD2004EF31F /* LaunchScreen.xib in Resources */,
 				38CFC41E1B550CD2004EF31F /* Images.xcassets in Resources */,
 				38CE79741B56720F0024BE2D /* ZFYLoad.bundle in Resources */,
