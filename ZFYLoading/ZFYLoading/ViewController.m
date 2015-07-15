@@ -19,7 +19,10 @@
     // Do any additional setup after loading the view, typically from a nib.
     self.view.backgroundColor= [UIColor whiteColor];
     //[ZFYLoading showNullWithstatus:@"没有数据" inView:self.view];
-    [ZFYLoading showNullWithImage:nil inView:self.view];
+    //[ZFYLoading showNullWithImage:nil inView:self.view];
+    [ZFYLoading showFailWithstatus:@"加载失败" inView:self.view event:^(UIButton *button) {
+        
+    }];
 }
 
 - (void)didReceiveMemoryWarning {
