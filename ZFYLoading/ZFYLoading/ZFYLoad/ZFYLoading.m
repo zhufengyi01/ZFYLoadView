@@ -100,6 +100,7 @@ const float  Rotation_InterVal = 1.3f;
 #pragma mark --Fail dataMethod
 +(void)showFailWithstatus:(NSString *)string inView:(UIView *) view event:(void (^)(UIButton *sender)) fail;
 {
+    [[self sharedView] removeAllSubView];
     [self sharedView];
     [self sharedView].frame = CGRectMake(0, 0, view.frame.size.width,view.frame.size.height);
     [self sharedView].failblock = fail;
