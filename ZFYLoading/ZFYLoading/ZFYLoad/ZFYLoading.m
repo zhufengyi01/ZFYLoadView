@@ -50,25 +50,20 @@ const float  Rotation_InterVal = 1.3f;
         NSString *image_url = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"ZFYLoad.bundle/images/loading_roll.png"];
         imv.image =[UIImage imageWithContentsOfFile:image_url];
     }else{
-    imv.image = image;
+        imv.image = image;
     }
     CABasicAnimation *animation = [self Rotaionaimation];
     [imv.layer addAnimation:animation forKey:@"rotation"];
     [[self sharedView] addSubview:imv];
     UILabel *lbl = [self createLableWithTitle:string frame:CGRectMake(0, imv.frame.origin.y+imv.frame.size.height, view.frame.size.width, 40)];
     [[self sharedView] addSubview:lbl];
-
 }
 
 
 #pragma mark --Null dataMethod
 +(void)showNullWithstatus:(NSString *)string inView:(UIView *) view;
 {
-    [self sharedView];
-    [self sharedView].frame = CGRectMake(0, 0, view.frame.size.width,view.frame.size.height);
-    [view addSubview:[self sharedView]];
-    UILabel *lbl = [self createLableWithTitle:string frame:CGRectMake(0, 0, view.frame.size.width, view.frame.size.height)];
-    [[self sharedView] addSubview:lbl];
+    [self showNullWithImage:nil status:string inview:view];
 }
 +(void)showNullWithImage:(UIImage *)image inView:(UIView *) view;
 {

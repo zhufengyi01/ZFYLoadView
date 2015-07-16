@@ -33,13 +33,13 @@
 //     [self performSelector:@selector(dis) withObject:self afterDelay:4];
 //
     //没有数据
-    //    [ZFYLoading showNullWithstatus:@"没有数据" inView:view];
+    [ZFYLoading showNullWithstatus:@"没有数据" inView:view];
     //    [self performSelector:@selector(dis) withObject:self afterDelay:4];
     //[ZFYLoading showNullWithImage:[UIImage imageNamed:@"huoying"] inView:view];
     //[ZFYLoading showNullWithImage:[UIImage imageNamed:@"huoying"] status:@"呵呵..." inview:view];
     
     //正在加载
-    [ZFYLoading showLoadViewInview:view];
+    //[ZFYLoading showLoadViewInview:view];
     //[ZFYLoading showLoadViewWithStatus:@"正在加载..." inView:view];
     //[ZFYLoading showLoadViewWithImage:[UIImage imageNamed:@"huoying"] status:@"正在加载" inview:view];
     
